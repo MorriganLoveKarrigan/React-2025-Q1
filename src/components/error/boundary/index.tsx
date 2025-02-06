@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
+import { ErrorBoundaryState } from '@/components/error/boundary/types.ts';
 
 class ErrorBoundary extends Component<
   { children: React.ReactNode },
-  { hasError: boolean }
+  ErrorBoundaryState
 > {
   constructor(props: { children: React.ReactNode }) {
     super(props);
